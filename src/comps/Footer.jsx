@@ -1,106 +1,133 @@
-import { FaBehance, FaInstagram, FaLinkedinIn, FaPlay } from "react-icons/fa6";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa6";
+
 import content from "../constants.json";
 
-const { footer: f } = content;
+const { footerDark: f } = content;
 
-const Footer = () => {
-  return (
-    <footer className="relative overflow-hidden bg-[#BBEC00] font-[Arial,Helvetica,sans-serif] text-black">
-      {/* Background Dark circle */}
-      <div
-        saria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 aspect-square w-[120%] -translate-x-1/2 rounded-full bg-black/10 sm:w-[75%] md:w-[55%] lg:w[44%]"
-      />
+const socials = [
+  { Icon: FaFacebookF, label: "Facebook", round: true },
+  { Icon: FaInstagram, label: "Instagram", round: false },
+  { Icon: FaYoutube, label: "YouTube", round: true },
+];
 
-      <div className="relative">
-        {/* Top grid */}
-        <div className="grid grid-cols-1 gap-10 px-6 pt-14 sm:grid-cols-2 sm:px-8 sm:pt-16 md:grid-cols-3 md:items-start lg:px-11 lg:pt-24">
-          {/* Contact */}
-          <div>
-            <p className="text-sm">{f.contact.label}</p>
-            <div className="mt-5 space-y-4 text-base font-bold lg:text-[17px]">
-              <a href={`mailto:${f.contact.email}`} className="block break-all">
-                {f.contact.email}
-              </a>
-              <a href={`tel:${f.contact.phone}`} className="block">
-                {f.contact.phone}
-              </a>
-            </div>
-          </div>
+const Heading = ({ children }) => (
+  <h4 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+    {children}
+  </h4>
+);
 
-          {/* CTA */}
-          <div className="order-first flex flex-col items-center text-center sm:col-span-2 md:order-none md:col-span-1">
-            <h2 className="text-balance text-xl font-bold leading-tight sm:text-2xl md:text-xl lg:text-2xl xl:text-[26px]">
-              {f.heading}
-            </h2>
-            <a
-              href="#"
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#1a0ee6] px-7 py-2.5 text-sm text-white transition hover:bg-[#1409b8]"
+const FooterDark = () => (
+  <footer className="bg-black text-white">
+    <div className="py-20 flex">
+      <p className="mx-auto font-semibold text-4xl">
+        Join the Top 1% Engineers today
+      </p>
+    </div>
+    <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8 lg:py-20">
+      {/* Top */}
+      <div className="grid gap-10 md:grid-cols-2 md:items-start">
+        <h2 className="text-3xl font-normal leading-tight sm:text-4xl lg:text-[44px]">
+          {f.tagline[0]}
+          <br />
+          {f.tagline[1]}
+        </h2>
+
+        <div className="md:justify-self-end md:w-full md:max-w-lg">
+          <p className="mb-3 text-lg sm:text-xl">{f.touch}</p>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="flex items-center gap-2 rounded-full border border-white/40 p-1.5 pl-5 sm:pl-6"
+          >
+            <input
+              type="email"
+              required
+              placeholder={f.placeholder}
+              className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-white/80"
+            />
+            <button
+              type="submit"
+              className="shrink-0 rounded-full bg-[#FF4D00] px-5 py-3 text-sm font-medium transition hover:bg-[#e04400] sm:px-7"
             >
-              {f.cta}
-              <FaPlay size={9} />
+              {f.subscribe}
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Links */}
+      <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-[1.6fr_1fr_1fr_1fr] lg:mt-16">
+        <div className="col-span-2 md:col-span-1">
+          <Heading>{f.contactLabel}</Heading>
+          <div className="mt-5 space-y-3 text-base">
+            <a
+              href={`mailto:${f.email}`}
+              className="flex items-center gap-3 break-all"
+            >
+              <FaEnvelope className="shrink-0 text-[#FF4D00]" size={20} />
+              {f.email}
+            </a>
+            <a href={`tel:${f.phone}`} className="flex items-center gap-3">
+              <FaPhone className="shrink-0 text-[#FF4D00]" size={18} />
+              {f.phone}
             </a>
           </div>
+        </div>
 
-          {/* Locations */}
-          <div className="sm:justify-self-end">
-            {f.locations.map((loc, i) => (
-              <div key={loc.label} className={i > 0 ? "mt-10" : ""}>
-                <p className="text-sm">{loc.label}</p>
-                <address className="mt-5 text-base font-bold not-italic leading-snug lg:text-[17px]">
-                  {loc.address.map((line) => (
-                    <span key={line} className="block">
-                      {line}
-                    </span>
-                  ))}
-                </address>
-              </div>
+        {f.columns.map((col) => (
+          <div key={col.title}>
+            <Heading>{col.title}</Heading>
+            <ul className="mt-5 space-y-4">
+              {col.links.map((l) => (
+                <li key={l}>
+                  <a href="#" className="transition hover:text-[#FF4D00]">
+                    {l}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        <div>
+          <Heading>{f.followLabel}</Heading>
+          <div className="mt-5 flex gap-3">
+            {socials.map(({ Icon, label, round }) => (
+              <a
+                key={label}
+                href="#"
+                aria-label={label}
+                className={`flex h-10 w-10 items-center justify-center bg-white text-black transition hover:bg-[#FF4D00] hover:text-white ${
+                  round ? "rounded-full" : "rounded-lg"
+                }`}
+              >
+                <Icon size={18} />
+              </a>
             ))}
           </div>
         </div>
+      </div>
 
-        {/* Legal row */}
-        <div className="mt-12 grid grid-cols-1 items-center gap-4 px-6 text-center text-[11px] sm:mt-14 sm:grid-cols-3 sm:px-8 sm:text-left">
+      {/* Bottom */}
+      <div className="mt-14 border-t border-white/20 pt-8 lg:mt-16">
+        <div className="flex flex-col gap-4 text-sm text-white/70 sm:flex-row sm:items-center sm:justify-between">
           <p>{f.copyright}</p>
-          <a href="#" className="sm:text-center">
-            {f.terms}
-          </a>
-          <div className="flex items-center justify-center gap-4 sm:justify-end">
-            <a href="#" aria-label="Behance">
-              <FaBehance size={16} />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <FaInstagram size={14} />
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <FaLinkedinIn size={14} />
-            </a>
+          <div className="flex gap-8">
+            {f.legal.map((l) => (
+              <a key={l} href="#" className="transition hover:text-white">
+                {l}
+              </a>
+            ))}
           </div>
         </div>
-
-        {/* Giant cropped text */}
-        <div className="mt-8 px-6 sm:px-8 lg:px-11">
-          <svg
-            viewBox="0 0 1200 105"
-            className="block w-full"
-            role="img"
-            aria-label={f.giant}
-          >
-            <text
-              x="0"
-              y="145"
-              fontSize="190"
-              textLength="1200"
-              lengthAdjust="spacingAndGlyphs"
-              className="fill-black font-display"
-            >
-              {f.giant}
-            </text>
-          </svg>
-        </div>
       </div>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
 
-export default Footer;
+export default FooterDark;

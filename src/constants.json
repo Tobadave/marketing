@@ -1,4 +1,32 @@
 {
+  "refferals": {
+    "title": ["Systems", "that actually", "work."],
+    "body": "Scope, cost, and deliver every solution with confidence. No spreadsheets, no guesswork.",
+    "cta": "Start Free Trial",
+    "stats": [
+      {
+        "value": "200+",
+        "tag": "SOLUTIONS SCOPED",
+        "string": "Architectures priced and delivered with real numbers."
+      },
+      {
+        "value": "100+",
+        "tag": "HAPPY CLIENTS",
+        "text": "Teams that keep coming back for more."
+      },
+      {
+        "value": "15",
+        "tag": "MIN TO CONSULT",
+        "text": "Implement the best ideas after a quick consultation."
+      },
+      {
+        "value": "95%",
+        "tag": "ESTIMATE ACCURACY",
+        "text": "Numbers you can defend, not rough guesses."
+      }
+    ]
+  },
+
   "nav": {
     "logo": "Logo",
     "links": ["MCP", "Customers", "Pricing"],
@@ -52,5 +80,113 @@
     "copyright": "© Copyright 2026. Your Brand. All rights reserved.",
     "terms": "Terms & Conditions",
     "giant": "LET’S WORK TOGETHER"
+  },
+
+  "features": [
+    {
+      "stat": "47%",
+      "arrow": true,
+      "label": [
+        "",
+        "increase in your MRR",
+        " by end of this year is forecasted"
+      ],
+      "title": "Clear data",
+      "body": [
+        "Check your data and analyse it easy with our agent explanation, ",
+        "drive your business decision",
+        " based on data."
+      ]
+    },
+    {
+      "stat": "356",
+      "arrow": false,
+      "label": [
+        "new custom recommended ",
+        "action points to scale your business",
+        ""
+      ],
+      "title": "Action plan",
+      "body": [
+        "Strategically plan for the future and drive business ",
+        "growth with confidence",
+        " using the Action Plan feature."
+      ]
+    },
+    {
+      "stat": "89%",
+      "arrow": true,
+      "label": [
+        "",
+        "increase in your ARR",
+        " by end of this year is forecasted"
+      ],
+      "title": "Forecast",
+      "body": [
+        "Forecast your revenue to ",
+        "strategically plan for the future",
+        " and drive business growth with confidence."
+      ]
+    }
+  ],
+
+  "footerDark": {
+    "tagline": ["Build systems that work –", "one estimate at a time."],
+    "touch": "Get In Touch!",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "contactLabel": "CONTACT INFORMATION",
+    "email": "support@yourbrand.com",
+    "phone": "1800-3232-8686",
+
+    "columns": [
+      {
+        "title": "COMPANY",
+        "links": ["Features", "About Us", "Contact", "Pricing"]
+      },
+      { "title": "HELP", "links": ["FAQ", "Help Center", "Support"] }
+    ],
+    "followLabel": "FOLLOW US",
+    "copyright": "© 2026 Your Brand. All Rights Reserved.",
+    "legal": ["Privacy", "Terms & condition"]
+  },
+  "headline": {
+    "title": "Article categories",
+    "browse": "Browse all articles",
+    "categories": [
+      {
+        "title": "Architecture",
+        "text": "Reference designs and proven patterns for systems that scale without surprises.",
+        "image": "/cat1.jpg"
+      },
+      {
+        "title": "Costing",
+        "text": "Break down scope, effort, and cloud spend into numbers you can defend.",
+        "image": "/cat2.jpg"
+      },
+      {
+        "title": "Delivery",
+        "text": "Turn approved estimates into proposals, timelines, and shipped solutions.",
+        "image": "/cat3.jpg"
+      }
+    ],
+    "popularLabel": "Popular now",
+    "popular": [
+      {
+        "category": "Architecture",
+        "date": "Sep 1, 2026",
+        "title": "Unveiling reference architectures that actually hold up in production"
+      },
+      {
+        "category": "Costing",
+        "date": "Sep 8, 2026",
+        "title": "Conquer the estimate: pricing complex systems without spreadsheets"
+      },
+      {
+        "category": "Delivery",
+        "date": "Sep 15, 2026",
+        "title": "Ship with confidence: export-ready proposals in minutes"
+      }
+    ]
   }
 }
