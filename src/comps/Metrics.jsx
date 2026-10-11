@@ -1,6 +1,7 @@
 import content from "../constants.json";
 import { logos } from "../logo";
-
+import Reff from "./Reff";
+// Reff
 const { partners } = content;
 
 const Metrics = () => {
@@ -31,6 +32,7 @@ const Metrics = () => {
           </div>
         </div>
       </section>
+      <Reff />
     </>
   );
 };

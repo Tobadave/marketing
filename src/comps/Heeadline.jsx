@@ -44,23 +44,17 @@ const Reveal = ({ children, delay = 0, className = "" }) => {
 };
 
 const Headline = () => (
-  <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:py-25">
     <div className="mx-auto max-w-6xl">
       {/* Header */}
-      <Reveal className="flex items-center justify-between gap-4">
-        <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+      <Reveal className="flex items-center justify-center pb-0 gap-4">
+        <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
           {h.title}
         </h2>
-        <a
-          href="#"
-          className="shrink-0 rounded-full border border-neutral-200 px-4 py-2 text-xs font-medium text-neutral-900 transition hover:border-neutral-900 hover:bg-neutral-900 hover:text-white sm:text-sm"
-        >
-          {h.browse}
-        </a>
       </Reveal>
 
       {/* Category cards */}
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <div className="mt-15 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
         {h.categories.map((c, i) => (
           <Reveal
             key={c.title}
@@ -69,7 +63,7 @@ const Headline = () => (
           >
             <a
               href="#"
-              className="group relative block aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-900 sm:aspect-[3/4]"
+              className="group relative block aspect-4/5 overflow-hidden rounded-2xl bg-neutral-900 sm:aspect-[3/4]"
             >
               {/* Image */}
               <div
@@ -89,10 +83,10 @@ const Headline = () => (
 
               {/* Text */}
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                <h3 className="text-2xl font-bold text-white transition-transform duration-500 group-hover:-translate-y-1">
+                <h3 className="text-[27px] font-semibold text-white transition-transform duration-500 group-hover:-translate-y-1">
                   {c.title}
                 </h3>
-                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-white/75 sm:text-[13px]">
+                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-white/75 sm:text-[14px]">
                   {c.text}
                 </p>
               </div>
@@ -100,35 +94,6 @@ const Headline = () => (
           </Reveal>
         ))}
       </div>
-
-      {/* Popular now */}
-      <Reveal delay={200} className="mt-14 sm:mt-16">
-        <div className="flex items-center gap-6">
-          <p className="shrink-0 text-xs font-bold text-neutral-900 sm:text-sm">
-            {h.popularLabel}
-          </p>
-          <span className="h-px flex-1 bg-neutral-100" />
-        </div>
-
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-0">
-          {h.popular.map((p, i) => (
-            <a
-              key={p.title}
-              href="#"
-              className={`group block md:px-6 ${
-                i === 0 ? "md:pl-0" : "md:border-l md:border-neutral-100"
-              } ${i === h.popular.length - 1 ? "md:pr-0" : ""}`}
-            >
-              <p className="text-[11px] text-neutral-500">
-                {p.category} · {p.date}
-              </p>
-              <h4 className="mt-3 max-w-xs text-sm font-semibold leading-snug text-neutral-900 transition-colors group-hover:text-[#FF4D00]">
-                {p.title}
-              </h4>
-            </a>
-          ))}
-        </div>
-      </Reveal>
     </div>
   </section>
 );

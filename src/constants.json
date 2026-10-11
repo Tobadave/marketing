@@ -131,7 +131,7 @@
   ],
 
   "footerDark": {
-    "tagline": ["Build systems that work –", "one estimate at a time."],
+    "tagline": ["Reach out to us"],
     "touch": "Get In Touch!",
     "placeholder": "Enter your email",
     "subscribe": "Subscribe",
@@ -146,12 +146,14 @@
       },
       { "title": "HELP", "links": ["FAQ", "Help Center", "Support"] }
     ],
+
     "followLabel": "FOLLOW US",
     "copyright": "© 2026 Your Brand. All Rights Reserved.",
     "legal": ["Privacy", "Terms & condition"]
   },
+
   "headline": {
-    "title": "Article categories",
+    "title": "Let's grow your service",
     "browse": "Browse all articles",
     "categories": [
       {
@@ -168,24 +170,6 @@
         "title": "Delivery",
         "text": "Turn approved estimates into proposals, timelines, and shipped solutions.",
         "image": "/cat3.jpg"
-      }
-    ],
-    "popularLabel": "Popular now",
-    "popular": [
-      {
-        "category": "Architecture",
-        "date": "Sep 1, 2026",
-        "title": "Unveiling reference architectures that actually hold up in production"
-      },
-      {
-        "category": "Costing",
-        "date": "Sep 8, 2026",
-        "title": "Conquer the estimate: pricing complex systems without spreadsheets"
-      },
-      {
-        "category": "Delivery",
-        "date": "Sep 15, 2026",
-        "title": "Ship with confidence: export-ready proposals in minutes"
       }
     ]
   }

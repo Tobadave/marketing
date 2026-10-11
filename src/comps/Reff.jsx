@@ -34,7 +34,7 @@ const Reff = () => (
             style={{ animationDelay: `${i * 150}ms` }}
             className="animate-fade-up text-center sm:text-left"
           >
-            <p className="text-5xl font-bold tracking-tight text-white sm:text-6xl">
+            <p className="text-5xl font-semibold tracking-tight text-[#FFFFFF] sm:text-6xl">
               <CountUp value={s.value} />
             </p>
             <span className="mt-5 inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium tracking-wide text-white/80">

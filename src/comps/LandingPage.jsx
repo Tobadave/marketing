@@ -25,7 +25,6 @@ const LandingPage = () => {
         {/* Preview */}
         <Preview />
         <Metrics />
-        <Reff />
         <Headline />
         <FooterDark />
       </div>

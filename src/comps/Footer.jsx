@@ -23,11 +23,28 @@ const Heading = ({ children }) => (
 );
 
 const FooterDark = () => (
-  <footer className="bg-black text-white">
-    <div className="py-20 flex">
-      <p className="mx-auto font-semibold text-4xl">
-        Join the Top 1% Engineers today
-      </p>
+  <footer className="bg-[#171717] text-white">
+    <div className="relative overflow-hidden border-b border-white/10">
+      <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-16 text-center sm:px-8 sm:py-20 lg:py-24">
+        <h2 className="mt-6 text-balance text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+          Join the Top 1% <span className="text-[#FF4D00]">Engineers</span>{" "}
+          today
+        </h2>
+
+        <p className="mt-5 max-w-xl text-sm text-white/60 sm:text-base">
+          Scope, cost, and deliver every solution with confidence. No
+          spreadsheets, no guesswork.
+        </p>
+
+        <div className="mt-8 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
+          <a
+            href="#"
+            className="rounded-full border border-white/20 px-8 py-4 text-center font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-white hover:bg-white hover:text-neutral-900"
+          >
+            Take One Step
+          </a>
+        </div>
+      </div>
     </div>
     <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8 lg:py-20">
       {/* Top */}
@@ -52,7 +69,7 @@ const FooterDark = () => (
             />
             <button
               type="submit"
-              className="shrink-0 rounded-full bg-[#FF4D00] px-5 py-3 text-sm font-medium transition hover:bg-[#e04400] sm:px-7"
+              className="shrink-0 rounded-full bg-gray-700 px-5 py-3 text-sm font-medium transition hover:bg-gray-900 sm:px-7"
             >
               {f.subscribe}
             </button>
@@ -61,10 +78,10 @@ const FooterDark = () => (
       </div>
 
       {/* Links */}
-      <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-[1.6fr_1fr_1fr_1fr] lg:mt-16">
+      <div className="text-[14px] mt-14 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-[1.6fr_1fr_1fr_1fr] lg:mt-16">
         <div className="col-span-2 md:col-span-1">
           <Heading>{f.contactLabel}</Heading>
-          <div className="mt-5 space-y-3 text-base">
+          <div className="mt-5 space-y-3 text-sm text-neutral-200">
             <a
               href={`mailto:${f.email}`}
               className="flex items-center gap-3 break-all"
