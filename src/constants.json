@@ -29,5 +29,28 @@
     { "name": "Meta Quest", "key": "metaQuest" },
     { "name": "Metallica", "key": "metallica" },
     { "name": "PlayStation", "key": "playstation" }
-  ]
+  ],
+
+  "footer": {
+    "heading": "Got a project? Want to collaborate?",
+    "cta": "Discuss your project",
+    "contact": {
+      "label": "Contact",
+      "email": "hello@yourbrand.com",
+      "phone": "+234 800 000 0000"
+    },
+    "locations": [
+      {
+        "label": "Nigeria",
+        "address": ["12 Example Street", "Port Harcourt, Rivers"]
+      },
+      {
+        "label": "United Kingdom",
+        "address": ["60 Example Road", "London, EC1A 1BB"]
+      }
+    ],
+    "copyright": "© Copyright 2026. Your Brand. All rights reserved.",
+    "terms": "Terms & Conditions",
+    "giant": "LET’S WORK TOGETHER"
+  }
 }

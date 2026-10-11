@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", Impact, sans-serif;
+  /* keep your existing animations below */
+}
 
 @theme {
   --animate-fade-up: fade-up 1s ease-out both;
@@ -19,7 +25,11 @@
   --animate-marquee: marquee 25s linear infinite;
 
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }

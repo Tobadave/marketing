@@ -2,6 +2,8 @@ import Navbar from "./Navbar";
 import content from "../constants.json";
 import Preview from "./Preview";
 import Metrics from "./Metrics";
+import Footer from "./Footer";
+// Footer
 
 const { hero, preview } = content;
 
@@ -45,6 +47,7 @@ const LandingPage = () => {
         {/* Preview */}
         <Preview />
         <Metrics />
+        <Footer />
       </div>
     </>
   );
