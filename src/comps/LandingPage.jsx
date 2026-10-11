@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import content from "../constants.json";
 import Preview from "./Preview";
+import Metrics from "./Metrics";
 
 const { hero, preview } = content;
 
@@ -21,7 +22,8 @@ const LandingPage = () => {
         {/* Hero */}
         <section className="mx-auto max-w-4xl px-6 pt-32 text-center">
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tighter sm:text-5xl md:text-7xl">
-            {hero.titleStart} {hero.titleMiddle} {hero.titleEnd}{" "}
+            {hero.titleStart} {hero.titleMiddle}{" "}
+            <text className="italic text-orange-600">{hero.titleEnd}</text>{" "}
             {hero.titleLast}
           </h1>
 
@@ -31,10 +33,10 @@ const LandingPage = () => {
           </p>
 
           <div className="mt-12 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <button className="rounded-full bg-neutral-900 px-7 py-4 font-semibold text-white">
+            <button className="hover:cursor-pointer rounded-full bg-neutral-900 px-7 py-4 font-semibold text-white">
               {hero.primaryBtn}
             </button>
-            <button className="rounded-full bg-neutral-100 px-7 py-4 font-semibold">
+            <button className="hover:cursor-pointer rounded-full bg-neutral-100 px-7 py-4 font-semibold">
               {hero.secondaryBtn}
             </button>
           </div>
@@ -42,6 +44,7 @@ const LandingPage = () => {
 
         {/* Preview */}
         <Preview />
+        <Metrics />
       </div>
     </>
   );

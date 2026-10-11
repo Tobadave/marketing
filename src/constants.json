@@ -5,18 +5,29 @@
     "login": "Log in"
   },
   "hero": {
-    "titleStart": "Where",
-    "titleMiddle": "teams and agents",
-    "titleEnd": "find designs",
-    "titleLast": "that work",
-    "subtitle": "The design reference library for apps and sites.",
-    "subtitle2": "621,500 shipped screens, new every week.",
-    "primaryBtn": "Join for free",
-    "secondaryBtn": "See plans →"
+    "titleStart": "Where your",
+    "titleMiddle": "Product Engineer come to, for systems that",
+    "titleEnd": "actually",
+    "titleLast": "work.",
+    "subtitle": "Scope, cost, and deliver every solution.",
+    "subtitle2": "with confidence. No spreadsheets, no guesswork.",
+    "primaryBtn": "Build With Us",
+    "secondaryBtn": "See Plans →"
   },
+
   "preview": {
     "logo": "Logo",
     "tabs": ["Apps", "Sites"],
-    "searchPlaceholder": "Search on iOS..."
-  }
+    "searchPlaceholder": "Learn about the best architecture..."
+  },
+
+  "partners": [
+    { "name": "Honda", "key": "honda" },
+    { "name": "Kenwood", "key": "kenwood" },
+    { "name": "LinkedIn", "key": "linkedin" },
+    { "name": "Meta", "key": "meta" },
+    { "name": "Meta Quest", "key": "metaQuest" },
+    { "name": "Metallica", "key": "metallica" },
+    { "name": "PlayStation", "key": "playstation" }
+  ]
 }
