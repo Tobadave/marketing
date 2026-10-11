@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "logo": "Logo",
+    "links": ["MCP", "Customers", "Pricing"],
+    "login": "Log in"
+  },
+  "hero": {
+    "titleStart": "Where",
+    "titleMiddle": "teams and agents",
+    "titleEnd": "find designs",
+    "titleLast": "that work",
+    "subtitle": "The design reference library for apps and sites.",
+    "subtitle2": "621,500 shipped screens, new every week.",
+    "primaryBtn": "Join for free",
+    "secondaryBtn": "See plans →"
+  },
+  "preview": {
+    "logo": "Logo",
+    "tabs": ["Apps", "Sites"],
+    "searchPlaceholder": "Search on iOS..."
+  }
+}
