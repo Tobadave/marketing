@@ -1,5 +1,5 @@
 import content from "../constants.json";
-import { CountUp } from "./Components";
+import { CountUp } from "./components";
 const { refferals: r } = content; //access using 'r' not refferals
 
 const Reff = () => (
