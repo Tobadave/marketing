@@ -63,7 +63,7 @@ const Headline = () => (
           >
             <a
               href="#"
-              className="group relative block aspect-4/5 overflow-hidden rounded-2xl bg-neutral-900 sm:aspect-[3/4]"
+              className="group relative block aspect-4/5 overflow-hidden rounded-2xl bg-neutral-900 sm:aspect-3/4"
             >
               {/* Image */}
               <div
