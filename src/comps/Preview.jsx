@@ -2,13 +2,16 @@ import { Search, Bookmark, Bell } from "lucide-react";
 import content from "../constants.json";
 import { WindowDots, PrimaryBtn, SecondaryBtn } from "./components";
 const { preview } = content;
-// Cards
 
 const Preview = () => {
   return (
     <>
+      {/* the white and black background */}
       <div className="bg-linear-to-b from-white from-50% to-[#111] to-50% px-4 pt-24 pb-10">
-        <div className="relative z-10 mx-auto max-w-6xl rounded-[30px] bg-neutral-200 p-2">
+
+        {/* main box start */}
+        <div className="relative z-10 mx-auto max-w-6xl rounded-[30px] bg-white p-0.5 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.35),0_10px_30px_-10px_rgba(0,0,0,0.2)] ring-1 ring-black/5">
+          {" "}
           <div className="rounded-3xl bg-white px-8 py-5">
             <div className="flex flex-wrap items-center justify-between gap-3 md:flex-nowrap">
               <div className="flex items-center gap-4 sm:gap-6 sm:hidden">
@@ -67,7 +70,7 @@ const Preview = () => {
                 <h2 className="text-3xl text-gray-800 font-semibold leading-tight tracking-tight sm:text-4xl">
                   Build systems that drive real numbers
                 </h2>
-                <p className="mt-4 text-base text-neutral-500 sm:text-lg">
+                <p className="mt-4 text-base text-neutral-500 sm:text-md">
                   Try our architecture systems and implement the best ideas
                   after a few minutes of consultation.
                 </p>
