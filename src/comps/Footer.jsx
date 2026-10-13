@@ -1,19 +1,12 @@
-import {
-  FaEnvelope,
-  FaPhone,
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa6";
+import { FaEnvelope, FaPhone, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 import content from "../constants.json";
 
 const { footerDark: f } = content;
 
 const socials = [
-  { Icon: FaFacebookF, label: "Facebook", round: true },
-  { Icon: FaInstagram, label: "Instagram", round: false },
-  { Icon: FaYoutube, label: "YouTube", round: true },
+  { Icon: FaLinkedin, label: "LinkedIn", round: true },
+  { Icon: FaXTwitter, label: "Twitter", round: true },
 ];
 
 const Heading = ({ children }) => (

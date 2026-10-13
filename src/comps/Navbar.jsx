@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { FaYoutube, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { Menu, X } from "lucide-react";
 import content from "../constants.json";
 
@@ -24,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden items-center gap-6 md:flex">
-          <FaYoutube size={26} />
+          <FaLinkedin size={26} />
           <FaXTwitter size={22} />
           <span className="h-8 w-px bg-neutral-200" />
           <a href="#" className="font-medium">

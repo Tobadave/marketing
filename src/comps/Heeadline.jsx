@@ -47,10 +47,13 @@ const Headline = () => (
   <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:py-25">
     <div className="mx-auto max-w-6xl">
       {/* Header */}
-      <Reveal className="flex items-center justify-center pb-0 gap-4">
-        <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+      <Reveal className="flex flex-col items-center gap-2 pb-0 text-center">
+        <h2 className="text-2xl font-bold tracking-tight text-neutral-700 sm:text-4xl">
           {h.title}
         </h2>
+        <p className="max-w-md text-sm text-neutral-500 sm:text-base">
+          We can help improve systems and convert numbers
+        </p>
       </Reveal>
 
       {/* Category cards */}

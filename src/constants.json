@@ -30,7 +30,7 @@
   "nav": {
     "logo": "Soltech",
     "links": ["Our Models", "Products", "Pricing"],
-    "login": "Try Now"
+    "login": "Try For Free"
   },
   "hero": {
     "titleStart": "Where your",
@@ -136,8 +136,8 @@
     "placeholder": "Enter your email",
     "subscribe": "Subscribe",
     "contactLabel": "CONTACT INFORMATION",
-    "email": "support@yourbrand.com",
-    "phone": "1800-3232-8686",
+    "email": "support@soltech.com",
+    "phone": "+234-9076-538-029",
 
     "columns": [
       {
@@ -148,12 +148,12 @@
     ],
 
     "followLabel": "FOLLOW US",
-    "copyright": "© 2026 Your Brand. All Rights Reserved.",
+    "copyright": "© 2026 Soltech. All Rights Reserved.",
     "legal": ["Privacy", "Terms & condition"]
   },
 
   "headline": {
-    "title": "Let's grow your service",
+    "title": "Build systems that convert real metrics",
     "browse": "Browse all articles",
     "categories": [
       {

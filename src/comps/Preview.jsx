@@ -79,9 +79,7 @@ const Preview = () => {
                     "Export-ready proposals",
                   ].map((t) => (
                     <li key={t} className="flex items-center gap-3">
-                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-[11px] text-white">
-                        ✓
-                      </span>
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#2be10b] shadow-[0_0_8px_2px_rgba(57,255,20,0.7)]" />
                       {t}
                     </li>
                   ))}

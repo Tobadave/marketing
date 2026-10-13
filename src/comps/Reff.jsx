@@ -20,7 +20,7 @@ const Reff = () => (
           <p className="mx-auto max-w-md text-sm leading-relaxed text-white/60 sm:text-base lg:mx-0">
             {r.body}
           </p>
-          <button className="mt-6 rounded-xl bg-white px-6 py-3 text-sm font-medium text-neutral-900 transition hover:bg-neutral-200">
+          <button className="mt-6 rounded-full bg-white px-6 py-4 text-sm font-medium text-neutral-900 transition hover:bg-neutral-200">
             {r.cta}
           </button>
         </div>
@@ -34,6 +34,7 @@ const Reff = () => (
             style={{ animationDelay: `${i * 150}ms` }}
             className="animate-fade-up text-center sm:text-left"
           >
+            {/* count up allows values to automate count */}
             <p className="text-5xl font-semibold tracking-tight text-[#FFFFFF] sm:text-6xl">
               <CountUp value={s.value} />
             </p>
