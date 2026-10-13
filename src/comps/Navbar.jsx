@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutube, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Menu, X } from "lucide-react";
 import content from "../constants.json";
@@ -52,7 +52,7 @@ const Navbar = () => {
             {nav.login}
           </a>
           <div className="flex gap-5">
-            <FaYoutube size={26} />
+            <FaLinkedin size={26} />
             <FaXTwitter size={22} />
           </div>
         </div>

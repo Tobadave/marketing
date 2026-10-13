@@ -28,9 +28,9 @@
   },
 
   "nav": {
-    "logo": "Logo",
-    "links": ["MCP", "Customers", "Pricing"],
-    "login": "Log in"
+    "logo": "Soltech",
+    "links": ["Our Models", "Products", "Pricing"],
+    "login": "Try Now"
   },
   "hero": {
     "titleStart": "Where your",
@@ -77,7 +77,7 @@
         "address": ["60 Example Road", "London, EC1A 1BB"]
       }
     ],
-    "copyright": "© Copyright 2026. Your Brand. All rights reserved.",
+    "copyright": "© Copyright 2026. Soltech. All rights reserved.",
     "terms": "Terms & Conditions",
     "giant": "LET’S WORK TOGETHER"
   },
@@ -159,17 +159,17 @@
       {
         "title": "Architecture",
         "text": "Reference designs and proven patterns for systems that scale without surprises.",
-        "image": "/cat1.jpg"
+        "image": "/side-1.jpg"
       },
       {
         "title": "Costing",
         "text": "Break down scope, effort, and cloud spend into numbers you can defend.",
-        "image": "/cat2.jpg"
+        "image": "/side-2.jpg"
       },
       {
         "title": "Delivery",
         "text": "Turn approved estimates into proposals, timelines, and shipped solutions.",
-        "image": "/cat3.jpg"
+        "image": "/side-3.jpg"
       }
     ]
   }
