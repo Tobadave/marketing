@@ -47,7 +47,7 @@ const Features = () => (
             </p>
           </div>
 
-          {/* Info (overlaps the stat to create the notched seam) */}
+          {/* Info */}
           <div className="relative -mt-7 min-h-52 rounded-[28px] bg-black px-7 pt-9 pb-10 lg:px-9">
             <h3 className="text-2xl font-light text-white">{f.title}</h3>
             <p className="mt-6 text-sm leading-relaxed">
